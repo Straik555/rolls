@@ -1,0 +1,95 @@
+.masonry-layout {
+  column-count: 1;
+  column-gap: 29px;
+
+  &__panel {
+    break-inside: avoid;
+    margin-bottom: 56px;
+    width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    &__header {
+      height: 222px;
+      overflow: hidden;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+      }
+    }
+
+    &__content {
+      padding: 40px;
+      & h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      & p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.7;
+      }
+    }
+
+  }
+}
+
+.shares-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+
+
+@media screen and ( min-width: 1350px ) {
+  .masonry-layout {
+    column-count: 2;
+  }
+
+  .shares-title {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 1061px) and ( max-width: 1349px ){
+  .masonry-layout {
+    column-count: 2;
+    &__panel{
+      width: 300px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .masonry-layout {
+    column-count: 2;
+    &__panel{
+      width: 300px;
+    }
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+  .shares-title {
+    margin-top: 55px;
+  }
+}
+@media screen and ( min-width: 1850px ) {
+  .masonry-layout {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .masonry-layout {
+    &__panel {
+      margin-bottom: 25px;
+    }
+  }
+}

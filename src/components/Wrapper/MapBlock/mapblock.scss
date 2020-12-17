@@ -1,0 +1,129 @@
+.mapBox div:first-child {
+    position: relative !important;
+    height: 500px !important;
+}
+
+
+.bottom_map {
+    margin-bottom: auto;
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 20px 0;
+    background: transparent;
+    .mapBox {
+        flex: 0 1;
+        width: 100% !important;
+        padding-bottom: 0;
+        position: relative;
+        .map-absolut{
+            position: absolute;
+            left: 60px;
+            bottom: 100px;
+            width: 355px;
+            height: 268px;
+            background: #FFFFFF;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                padding-top: 10px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            &_center{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 20px;
+                padding-bottom: 30px;
+                span{
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: normal;
+                    text-align: center;
+                    color: #000000;
+                    padding-bottom: 9px;
+                    img{
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            button{
+                width: 308px;
+                height: 57px;
+                background: #F89F46;
+                box-shadow: 4px 24px 25px rgba(248, 159, 70, 0.27);
+                border-radius: 52px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 500px){
+        p{
+            width: 221px;
+        }
+        .mapBox {
+            .map-absolut {
+                width: 265px;
+                height: 200.06px;
+                bottom: 24px;
+                left: 26px;
+
+                h1 {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                &_center {
+                    padding-left: 10px;
+                    padding-bottom: 20px;
+
+                    span {
+                        font-size: 14px;
+                        line-height: 17px;
+                        padding-bottom: 7px;
+
+                        img {
+                            width: 10px;
+                            height: 10px;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                button {
+                    width: 229.92px;
+                    height: 42.55px;
+                    box-shadow: 2.98592px 17.9155px 18.662px rgba(248, 159, 70, 0.27);
+                    border-radius: 38.8169px;
+                    a{
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.wrapper {
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
+    zoom: 1;
+    .custom-main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        box-sizing: border-box;
+        .content__column {
+            box-sizing: border-box;
+            width: 65%;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 1900px){
+        zoom: 0.99;
+    }
+    @media screen and (max-width: 1851px){
+        zoom: 0.98;
+    }
+    @media screen and (max-width: 1800px){
+        zoom: 0.9675;
+    }
+    @media screen and (max-width: 1750px){
+        zoom: 0.953;
+    }
+    @media screen and (max-width: 1700px){
+        zoom: 0.94;
+    }
+    @media screen and (max-width: 1700px){
+        zoom: 0.94;
+    }
+    @media screen and (max-width: 1650px){
+        zoom: 0.925;
+    }
+    @media screen and (max-width: 1600px){
+        zoom: 0.911;
+    }
+    @media screen and (max-width: 1550px){
+        zoom: 0.888;
+    }
+    @media screen and (max-width: 1500px){
+        zoom: 0.882;
+    }
+    @media screen and (max-width: 1493px){
+        zoom: 0.878;
+    }
+    @media screen and (max-width: 1450px){
+        zoom: 0.87;
+    }
+    @media screen and ( max-width: 1060px ) {
+        zoom: 1;
+        .custom-main{
+            .content__column {
+                font-size: 100%;
+                width: 100%;
+                padding: 70px 0 0 0;
+            }
+        }
+    }
+}

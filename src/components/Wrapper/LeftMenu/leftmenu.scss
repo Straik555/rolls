@@ -1,0 +1,146 @@
+.left-sidebar {
+    margin-top: 7px;
+    width: 17.5%;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & li {
+            list-style-type: none;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+
+            & a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: #3F3737;
+                padding-left: 70px;
+            }
+
+            &:nth-child(1) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/set.png) no-repeat center left;
+            }
+            &:nth-child(2) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/rol.png) no-repeat center left;
+            }
+            &:nth-child(3) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/sushi.png) no-repeat center left;
+            }
+            &:nth-child(4) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/wok.png) no-repeat center left;
+            }
+            &:nth-child(5) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/pasta.png) no-repeat center left;
+            }
+            &:nth-child(6) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/soupe.png) no-repeat center left;
+            }
+            &:nth-child(7) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/hot.png) no-repeat center left;
+            }
+            &:nth-child(8) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/salat.png) no-repeat center left;
+            }
+            &:nth-child(9) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/sash.png) no-repeat center left;
+            }
+            &:nth-child(10) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/drink.png) no-repeat center left;
+            }
+            &:nth-child(11) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/sauce.png) no-repeat center left;
+            }
+            &:nth-child(12) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/snack.png) no-repeat center left;
+            }
+            &:nth-child(13) {
+                background: url(../../../assets/components/Wrapper/LeftMenu/dessert.png) no-repeat center left;
+            }
+        }
+    }
+    .left-bottom {
+        margin-top: 100px;
+        max-width: 290px;
+        &__br {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & li {
+                list-style-type: none;
+                padding: 19px 0;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:nth-child(1) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/new.png) no-repeat center left;
+                }
+                &:nth-child(2) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/fish.png) no-repeat center left;
+                }
+                &:nth-child(3) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/class.png) no-repeat center left;
+                }
+                &:nth-child(4) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/chees.png) no-repeat center left;
+                }
+                &:nth-child(5) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/popul.png) no-repeat center left;
+                }
+                &:nth-child(6) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/big.png) no-repeat center left;
+                }
+                &:nth-child(7) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/vegan.png) no-repeat center left;
+                }
+                &:nth-child(8) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/chilli.png) no-repeat center left;}
+                &:nth-child(9) {
+                    background: url(../../../assets/components/Wrapper/LeftMenu/spicy.svg) no-repeat center left;
+                }
+            }
+            & a {
+                text-decoration: none;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #3F3737;
+                padding-left: 70px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1061px) and (max-width: 1400px){
+    .left-sidebar{
+        &__list{
+            padding-inline-start: 20px;
+        }
+        .left-bottom{
+            &__list{
+                padding-inline-start: 20px;
+                width: 100px;
+                & li{
+                    & :nth-child(){
+                        margin-left: -30px!important;
+                    }
+                }
+                & a{
+                    width: 110px;
+                    word-wrap: break-word;
+                    padding-left: 60px!important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1060px) {
+    .left-sidebar {
+        display: none;
+    }
+}

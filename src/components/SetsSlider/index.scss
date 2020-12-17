@@ -1,0 +1,179 @@
+.sets_slider{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px 0  25px;
+  .header-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    &_title{
+      background: #FFFFFF;
+      filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+      border-radius: 8px;
+      max-width: 539px;
+      h3{
+        padding: 0 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+      }
+    }
+  }
+  .slider-block{
+    padding: 20px;
+    .slick-next, .slick-prev{
+      width: 40px;
+      height: 40px;
+      background: #FFFFFF;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+      margin-top: -70px;
+    }
+    .slick-next:before, .slick-prev:before{
+      content: url("../../assets/page/CardProduct/stick.svg");
+      position: absolute;
+      top: 8px;
+      left: 10px;
+    }
+    .slick-next:before{
+      transform: rotateY(180deg);
+      left: 15px;
+    }
+    .list{
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      text-align: center;
+      border: none;
+      outline: none;
+      .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        background: #FFFFFF;
+      }
+      p{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #43A948;
+        box-sizing: border-box;
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        color: #43A948;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1551px){
+    .slider-block{
+      .list{
+        p{
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .header-block{
+      &_title{
+        h3{
+          text-align: center;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    .slider-block{
+      padding: 20px 0;
+      .list {
+        p {
+          text-align: center;
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+      .slick-next, .slick-prev{
+        width: 25px;
+        height: 25px;
+        top: 100px;
+        margin-top: 0;
+      }
+      .slick-next:before, .slick-prev:before{
+        content: url("../../assets/page/CardProduct/stickSmall.svg");
+        top: 2.5px;
+        left: 6px;
+      }
+      .slick-next:before{
+        left: 9px;
+      }
+    }
+  }
+  @media screen and (max-width: 550px){
+    padding: 0 40px;
+    .slider-block{
+      .slick-next, .slick-prev{
+        top: 80px;
+      }
+      .list{
+        p{
+          font-size: 14px;
+          line-height: 17px;
+        }
+        .image{
+            width: 100px;
+            height: 100px;
+          amp-img{
+            width: 80px !important;
+            height: 80px !important;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 450px){
+    .header-block {
+      padding-bottom: 10px;
+    }
+    .slider-block{
+      .slick-next, .slick-prev{
+        top: 70px;
+      }
+      .list{
+        .image{
+          width: 80px;
+          height: 80px;
+          amp-img{
+            width: 60px !important;
+            height: 60px !important;
+          }
+        }
+        p{
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}

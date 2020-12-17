@@ -1,0 +1,25 @@
+.heading-blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 52px;
+    line-height: 60px;
+  }
+  &_svg{
+    display: none;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading-blog{
+    h1{
+      font-size: 30px;
+      line-height: 115.61%;
+      padding-bottom: 60px;
+    }
+    &_svg{
+      display: block;
+    }
+  }
+}

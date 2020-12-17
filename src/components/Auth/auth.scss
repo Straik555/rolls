@@ -1,0 +1,119 @@
+.log-in-block__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        border-bottom: 1px solid transparent;
+        &:hover {
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    }
+}
+
+.log-in-block {
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    padding: 57px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    &__error {
+        color: salmon;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    & h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    & label {
+        font-size: 14px;
+        font-weight: 400;
+        color: #C4C4C4;
+        margin-top: 23px;
+        margin-bottom: 5px;
+    }
+
+    & input {
+        height: 46px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        &::-moz-placeholder { color: #C4C4C4; }
+        &::-webkit-input-placeholder { color: #C4C4C4; }
+        padding-left: 10px;
+        outline: none;
+    }
+
+    & button {
+        width: 145px;
+        height: 37px;
+        background: #F89F46;
+        border-radius: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+}
+
+.label-invalid-style {
+    color: salmon !important;
+    font-weight: 500 !important;
+} 
+
+.input-invalid-style {
+    border: 1px solid salmon !important;
+}
+
+.form-button-disabled {
+    color: rgba(0, 0, 0, 0.26) !important;
+    background-color: #e0e0e0 !important;
+}
+
+
+
+.log-up-block-fix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    padding-bottom: 40px;
+    & label {
+        align-self: flex-start;
+    }
+    & input {
+        width: 100%;
+        align-self: flex-start;
+    }
+}
