@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {StateProvider} from "./context/providerContext";
+import './localization/i18n';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <h1>Hello</h1>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+        <StateProvider>
+            <Suspense fallback={<div>loading...</div>}>
+                <App />
+            </Suspense>
+        </StateProvider>
+    </BrowserRouter>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

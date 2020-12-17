@@ -1,0 +1,317 @@
+.delivery{
+  max-width: 100%;
+  font-family: Century Gothic;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  justify-content: center;
+  padding: 20px 0;
+  .description {
+    box-sizing: border-box;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_block-head{
+      display: flex;
+      align-items: center;
+      background: #FFFFFF;
+      filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+      border-radius: 8px;
+      h3{
+        text-align: center;
+        padding: 0 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+      }
+    }
+  }
+  .advantage, .bonus, .footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    h1{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 60px;
+      padding-bottom: 80px;
+    }
+  }
+  .mainText{
+    display: flex;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 22px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0 80px 0;
+    &_left, &_right{
+      width: 50%;
+      padding: 10px 30px 10px 0;
+    }
+  }
+  .dishes{
+    background-image: url("../../assets/page/Delivery/delivery.png");
+    max-width: 1160px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+    min-height: 611px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: #FFFFFF;
+    &_content{
+      p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+      }
+      strong{
+        font-weight: 700;
+        line-height: 70px;
+        font-size: 55px;
+      }
+      li{
+        list-style: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 168.61%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+  .advantage{
+    &_number{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &_block{
+        width: 205px;
+        padding: 5px;
+        list-style: none;
+        h1{
+          font-size: 80px;
+          line-height: 100%;
+          text-transform: uppercase;
+          color: #43A948;
+          margin: 5px 0 15px;
+          padding: 0;
+        }
+        &_list{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          height: 270px;
+          padding: 30px 20px 10px 20px;
+          background: #FFFFFF;
+          filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+          border-radius: 8px;
+          p{
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+          }
+
+        }
+      }
+    }
+  }
+  .bonus{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    &_title{
+      padding-top: 20px;
+      h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 159.11%;
+        color: #000000;
+        padding-bottom: 20px;
+      }
+    }
+    &_rolls{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 379px;
+        height: 370px;
+        list-style: none;
+        border: 4px solid #F89F46;
+        box-sizing: border-box;
+        border-radius: 24px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 30% center;
+        &_list{
+          width: 100%;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          background: #FFFFFF;
+          opacity: 0.6;
+          text-align: left;
+          h1{
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #000000;
+            padding: 0 0 0 30px;
+            margin: 0;
+          }
+          p{
+            font-weight: normal;
+            font-size: 18px;
+            color: #3F3737;
+            padding: 0 0 0 30px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    padding-left: 0;
+    &_inform{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      padding-top: 20px;
+      p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+  }
+  @media screen and (max-width: 1060px){
+    padding: 20px;
+    .mainText{
+      &_left, &_right{
+        padding: 10px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .description {
+      padding-top: 75px;
+      &_block-head{
+        h3{
+          text-align: center;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    .heading, .advantage, .bonus, .footer{
+      padding: 20px 0;
+      &_block{
+        h3{
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    .heading{
+      h1{
+        font-size: 30px;
+        line-height: 115.61%;
+        padding-bottom: 30px;
+      }
+    }
+    .mainText{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      padding-bottom: 20px;
+      &_left, &_right{
+        width: 100%;
+        padding: 5px 0;
+      }
+    }
+    .dishes {
+      padding-left: 30px;
+      padding-top: 20px;
+      align-items: flex-start;
+      min-height: 568px;
+      &_content {
+        p, strong {
+          font-size: 30px;
+          line-height: 39px;
+        }
+      }
+    }
+    .advantage{
+      padding-top: 80px;
+      &_number{
+        &_block{
+          width: 215px;
+        }
+      }
+    }
+    .bonus{
+      padding-top: 80px;
+      &_rolls{
+        &_block{
+          width: 307px;
+          height: 309px;
+          &_list{
+            height: 100px;
+            h1{
+              font-size: 30px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .description {
+      padding-top: 0px;
+      &_block{
+        h3{
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    .advantage{
+      }
+      &_number{
+        padding-top: 0;
+      }
+    }
+}
+
+

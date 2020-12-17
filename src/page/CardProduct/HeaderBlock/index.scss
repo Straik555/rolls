@@ -1,0 +1,196 @@
+.header-slider{
+  max-width: 100%;
+  padding: 0 25px 120px;
+  display: flex;
+  justify-content: space-between;
+  &_list-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 40%;
+    height: auto;
+    padding: 0 30px;
+   .list-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 100%;
+      img{
+        cursor: pointer;
+      }
+      &_header{
+        width: 200px;
+        h1{
+          text-align: left;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 115.61%;
+        }
+        span{
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 159.11%;
+        }
+        p{
+          font-weight: bold;
+          font-size: 16.5px;
+          line-height: 20px;
+        }
+
+      }
+      &_center{
+          display: flex;
+          span{
+            padding: 0 10px;
+            p{
+              border: 2px solid #43A948;
+              box-sizing: border-box;
+              border-radius: 8px;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 22px;
+              padding: 0 5px;
+            }
+          }
+      }
+      &_footer{
+        display: flex;
+        flex-direction: column;
+        .price{
+          display: flex;
+          align-items: flex-start;
+          h1{
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+          }
+          p{
+            text-decoration: line-through;
+          }
+        }
+        .phone-input{
+          display: flex;
+          padding-top: 40px;
+          .special-label{
+            display: none;
+          }
+          input{
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            width: 216px;
+            height: 40px;
+            padding-left: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            outline: none;
+          }
+          .price-button{
+            width: 70px;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3F3737;
+            border: 1px solid #C4C4C4;
+            border-left: none;
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
+            height: 40px;
+            background: #FFFFFF;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+        .order-button{
+          border: none;
+          cursor: pointer;
+          max-width: 240px;
+          height: 47px;
+          background: #F89F46;
+          box-shadow: 4px 24px 25px rgba(248, 159, 70, 0.27);
+          border-radius: 52px;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+          outline: none;
+        }
+      }
+    }
+  }
+  &_image-block{
+    padding-top: 50px;
+    width: 60%;
+    amp-img{
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-slider{
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+    &_list-block{
+
+      width: 100%;
+      padding: 20px 0 50px 0;
+    }
+    &_image-block{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-slider {
+    &_list-block {
+      .list-content {
+        &_header {
+          h1 {
+            font-size: 32px;
+            line-height: 115.61%;
+            margin-bottom: 0;
+          }
+          span{
+            line-height: 19px;
+          }
+          p{
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+        &_center{
+          display: none;
+        }
+        &_footer{
+          .price{
+            h1{
+              font-size: 24px;
+              line-height: 29px;
+            }
+            p{
+              font-size: 12px;
+              line-height: 15px;
+            }
+          }
+          .order-button{
+            max-width: 160px;
+            height: 37px;
+            font-size: 16px;
+            line-height: 20px;
+            box-shadow: 2.66667px 16px 16.6667px rgba(248, 159, 70, 0.27);
+            border-radius: 34.6667px;
+          }
+        }
+      }
+    }
+    &_image-block{
+      amp-img{
+        height: 200px !important;
+      }
+    }
+  }
+}
